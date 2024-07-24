@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Creativity At Work</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/nav_creative.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/ajax_jquery.validate_1.7/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#myform").validate({
+			debug: false,
+			rules: {
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('process.php', $("#myform").serialize(), function(data) {
+					$('#results').html(data);
+				});
+			}
+		});
+	});
+	</script>
+	<style>label.error {position:relative; top:10px; width: 237px; color: red;}</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="horizontal8px"></div>
+  <div class="header">
+    <div class="logo">
+	  <a href="index.html"><img src="images/logo.gif" width="235" height="335" alt="logo" /></a>
+	</div>
+    <div class="nav">
+	  <ul id="continents">
+	    <li id="what"><a href="what.html">WHAT OTHERS ARE SAYING</a></li>
+	    <li id="contents"><a href="contents.html">TABLE OF CONTENTS</a></li>    
+	    <li id="why"><a href="why.html">WHY YOU SHOULD READ THIS BOOK</a></li>
+	    <li id="about"><a href="about.html">ABOUT THE AUTHOR</a></li>
+	    <li id="read"><a href="read.html">READ A SAMPLE CHAPTER</a></li>
+	    <li id="creative"><a href="creative.html">TAKING YOUR COMPANY CREATIVE</a></li>
+	    <li id="stevejobs"><a href="steveJobs.html">WHAT WOULD STEVE JOBS DO?</a></li>
+	    <li id="buy"><a href="stevejobs.html">BUY IT NOW</a></li>
+	  </ul>
+	</div>
+  </div>
+  <div class="clear"></div>
+  
+  <div class="sidebar1">
+	<a href="#" class="buyButton" target="_blank">BUY THE BOOK</a><br />
+	<img src="images/title_put.gif" width="235" height="90" alt="PUT CREATIVITY TO WORK FOR YOU" /><br />
+	<a href="trainingProgram.html">Four Alpha Organizational Creativity Training Programs</a>
+	<span class="br"></span>
+	<a href="#">Buy the E-Book</a>
+	<span class="br"></span>
+	<a href="#">Download the White Paper:<br />Creative Accountability</a>
+	<span class="br"></span>
+	<a href="faq.html">Frequently Asked Questions</a><br /><br />
+    <a href="#"><img src="images/button_test.png" width="235" height="83" alt="TAKE THE TEST" /></a>
+  </div>
+  <div class="content">
+    <span class="contentT">TAKING YOUR COMPANY "CREATIVE"</span>
+	<span class="br"></span>
+	<em>Starting today, this company will implement organizational creativity to improve everything we do, from the mailroom to the boardroom.</em>
+    <span class="br"></span>
+	That's all it takes. One statement of purpose from the person in charge. The decision to take a company more creative must begin at the top.
+	From that point on, your biggest challenge will be to get your people to bring their brains to work and volunteer them for creative service. Once that commitment is made, "Good enough" will no longer be good enough.
+    <span class="br"></span>
+	But don't think of this as a revolutionary process. Although its results will be measurably impactful, organizational creativity is, in fact, evolutionary in its infusion to your corporate DNA.
+	It starts at the suggestion box level and grows through ad-hoc "Creativity circles" organized to bring the best ideas to fruition. But not just any ideas. Ideas that save time, money or energy. Ideas that can grow your company.
+	<span class="br"></span>
+	<em>Creativity At Work</em> provides forward-thinking companies with a roadmap to applying organizational creativity to their corporate growth initiatives.
+	Learn the step-by-step process by which your company can begin to deploy this valuable business skill throughout the enterprise. And then build on it.<br /><br />
+	<span class="contentT">Incentivizing Creative Service</span>
+	<span class="br"></span>
+	Taking your company "Creative" is a bold decision. Creative service&mdash;getting people from the mail room to the board room to volunteer their efforts for the good of the company&mdash;is an essential component to the success of this program.
+	Those individuals willing to volunteer their time and effort to see a great idea that they are part of make it to market or be incorporated into a new process that saves time or reduces cost or waste are invaluable to the organization.
+	<span class="br"></span>
+	<em>Creativity At Work</em> shows you how to develop incentive programs that reward creative service so that those participants will reap the rewards of the company's growth right along with it.<br /><br />
+	<span class="contentT">Organizational Creativity vs. Artistic Creativity</span>
+	<span class="br"></span>
+	In most organizations, resistance to creative initiatives is par for the course. Even the mere mention of the word "Creativity" makes the accountants and the bottom-line thinkers pretty nervous.
+	<span class="br"></span>
+	<em>Creativity At Work</em> explains the difference between the artistic creativity your nephew (the budding cellist) was born with and organizational creativity, which can be nurtured and developed within each and every one of your people, "creative" or not.
+	Organizational creativity, or "applied" creativity, is practiced within a business context. It is driven by commercial imperatives and objectives, not by artistic license.<br /><br />
+	<span class="contentT">Organizational Creativity and the Corporate Structure</span>
+	<span class="br"></span>
+	The practice of organizational creativity is not about creating another layer of management to get the job done. Quite the contrary. Bureaucracy actually stifles creativity.
+	Organizational creativity is more like the oil that allows the gears of a complex mechanism to run smoothly at slow, medium, or even the highest speeds.
+	<span class="br"></span>
+	<em>Creativity At Work</em> demonstrates how to harness the power of organizational creativity as an orderly pathway through, around and above the bureaucracy to those whose decisions are responsible for growing the company.
+  </div>
+  <div class="clear"></div>
+  <div class="horizontal8px"></div>
+  
+  <div class="col3">
+    <div class="col31">
+	  <span style="font-size: 14px; font-weight: bold;">FIND US ONLINE</span><br />
+	  <a href="mailto:creativity@creativityatwork.org">creativity@creativityatwork.org</a><br />
+	  <a href="www.fouralpha.com" target="_blank">www.fouralpha.com</a>
+	  <span class="br2"></span>
+	  <span style="font-weight: bold;">Stay informed. Get the newsletter.</span><br />
+	  <div>
+	  <form name="myform" id="myform" action="" method="post">
+	  <div id="submit_L"><input type="text" name="email" id="email" onfocus="this.value=''" value="Email Address" class="submitbox"></div>
+	  <div id="submit_R"><input type="image" name="submit" src="images/button_submit.png" onmouseover="javascript:this.src='images/button_submit_o.png';" onmouseout="javascript:this.src='images/button_submit.png';" width="30" height="30" border="0" onclick="return cap_valid(event);"></div>
+	  <span id="results"><span>
+	  </form>
+	  </div>
+	</div>
+	<div class="col32">
+	  <a href="trainingProgram.html"><img src="images/pic_trainingProgram.jpg" width="233" height="153" alt="TRAINING PROGRAMS" style="padding-bottom: 6px;" /></a><br />
+	  ORGANIZATIONAL CREATIVITY<br />CORPORATE TRAINING PROGRAMS
+	</div>
+	<div class="col33">
+	  <a href="#"><img src="images/pic_whitePaper.jpg" width="233" height="153" alt="WHITE PAPER" style="padding-bottom: 6px;" /></a><br />
+	  DOWNLOAD THE WHITE PAPER ON<br />CREATIVE ACCOUNTABILITY
+	</div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2012&ndash;2013 Smart Communications, Inc.
+  </div>
+</div>
+</body>
+</html>

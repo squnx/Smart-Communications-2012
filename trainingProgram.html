@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Creativity At Work</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/nav_trainingProgram.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/ajax_jquery.validate_1.7/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#myform").validate({
+			debug: false,
+			rules: {
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('process.php', $("#myform").serialize(), function(data) {
+					$('#results').html(data);
+				});
+			}
+		});
+	});
+	</script>
+	<style>label.error {position:relative; top:10px; width: 237px; color: red;}</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="horizontal8px"></div>
+  <div class="header">
+    <div class="logo">
+	  <a href="index.html"><img src="images/logo.gif" width="235" height="335" alt="logo" /></a>
+	</div>
+    <div class="nav">
+	  <ul id="continents">
+	    <li id="what"><a href="what.html">WHAT OTHERS ARE SAYING</a></li>
+	    <li id="contents"><a href="contents.html">TABLE OF CONTENTS</a></li>    
+	    <li id="why"><a href="why.html">WHY YOU SHOULD READ THIS BOOK</a></li>
+	    <li id="about"><a href="about.html">ABOUT THE AUTHOR</a></li>
+	    <li id="read"><a href="read.html">READ A SAMPLE CHAPTER</a></li>
+	    <li id="creative"><a href="creative.html">TAKING YOUR COMPANY CREATIVE</a></li>
+	    <li id="stevejobs"><a href="steveJobs.html">WHAT WOULD STEVE JOBS DO?</a></li>
+	    <li id="buy"><a href="stevejobs.html">BUY IT NOW</a></li>
+	  </ul>
+	</div>
+  </div>
+  <div class="clear"></div>
+  
+  <div class="sidebar1">
+	<a href="#" class="buyButton" target="_blank">BUY THE BOOK</a><br />
+	<img src="images/title_put.gif" width="235" height="90" alt="PUT CREATIVITY TO WORK FOR YOU" /><br />
+	Four Alpha Organizational Creativity Training Programs
+	<span class="br"></span>
+	<a href="#">Buy the E-Book</a>
+	<span class="br"></span>
+	<a href="#">Download the White Paper:<br />Creative Accountability</a>
+	<span class="br"></span>
+	<a href="faq.html">Frequently Asked Questions</a><br /><br />
+    <a href="#"><img src="images/button_test.png" width="235" height="83" alt="TAKE THE TEST" /></a>
+  </div>
+  <div class="content">
+    <span class="contentT">FOUR ALPHA ORGANIZATIONAL CREATIVITY TRAINING PROGRAMS</span>
+	<span class="br"></span>
+	There is a great void when it comes to using creativity to solve problems in corporate America. Most companies have no formal structure for generating ideas or innovative thinking.
+	But today, the rapid changes and agility demanded by technology and information glut require vast amounts of creativity to answer never-before-encountered questions.
+	The Four Alpha Process of Organizational Creativity was established to fill that void.
+    <span class="br"></span>
+	<em>Creativity At Work</em> outlines the step-by-step process required to implement formal creative thinking structures throughout your organization.
+	Beyond this book, Four Alpha offers training programs to organizations customized to fit their needs, beginning with a Needs Assessment evaluation.<br /><br />
+	<span class="contentT">Four Alpha Needs Assessment &ndash; Introducing Organizational Creativity to Your Organization</span>
+	<span class="br"></span>
+	The Four Alpha Needs Assessment evaluation consists of the following:
+	<span class="br"></span>
+	<ul>
+	    <li>Assessment of your company's current performance and development of a learning plan that applies organizational creativity training in several components of your organization.
+			In this learning plan, we help you to define what you want to learn about making your company more creative, why you want to learn it and how long you need to develop the skills required to successfully apply organizational creativity to your business.<span class="br"></span></li>
+	    <li>Access to online training resources on Four Alpha concepts:<span class="br"></span></li>
+			<ul style="list-style-image:none; list-style-position:outside; list-style-type:none; margin-left:0; padding-left:1em; text-indent:-1em;">
+			<li>&ndash; Pilot courses on Four Alpha organizational creativity topics to help you evaluate our program.<span class="br"></li>
+			<li>&ndash; Lecture notes, case studies and exercises to gain the essential skills and knowledge needed to determine which organizational creativity topics are best suited for your company.<span class="br"></li>
+			</ul>
+	    <li>Process mapping of your organization's workflow where specific organizational creativity inputs and outputs can be applied.</li>
+	  </ul>
+	<span class="br"></span>
+	<a href="mailto:creativity@creativityatwork.org">Contact us</a> to initiate an organizational creativity pilot program in your organization today
+  </div>
+  <div class="clear"></div>
+  <div class="horizontal8px"></div>
+  
+  <div class="col3">
+    <div class="col31">
+	  <span style="font-size: 14px; font-weight: bold;">FIND US ONLINE</span><br />
+	  <a href="mailto:creativity@creativityatwork.org">creativity@creativityatwork.org</a><br />
+	  <a href="www.fouralpha.com" target="_blank">www.fouralpha.com</a>
+	  <span class="br2"></span>
+	  <span style="font-weight: bold;">Stay informed. Get the newsletter.</span><br />
+	  <div>
+	  <form name="myform" id="myform" action="" method="post">
+	  <div id="submit_L"><input type="text" name="email" id="email" onfocus="this.value=''" value="Email Address" class="submitbox"></div>
+	  <div id="submit_R"><input type="image" name="submit" src="images/button_submit.png" onmouseover="javascript:this.src='images/button_submit_o.png';" onmouseout="javascript:this.src='images/button_submit.png';" width="30" height="30" border="0" onclick="return cap_valid(event);"></div>
+	  <span id="results"><span>
+	  </form>
+	  </div>
+	</div>
+	<div class="col32">
+	  <a href="trainingProgram.html"><img src="images/pic_trainingProgram.jpg" width="233" height="153" alt="TRAINING PROGRAMS" style="padding-bottom: 6px;" /></a><br />
+	  ORGANIZATIONAL CREATIVITY<br />CORPORATE TRAINING PROGRAMS
+	</div>
+	<div class="col33">
+	  <a href="#"><img src="images/pic_whitePaper.jpg" width="233" height="153" alt="WHITE PAPER" style="padding-bottom: 6px;" /></a><br />
+	  DOWNLOAD THE WHITE PAPER ON<br />CREATIVE ACCOUNTABILITY
+	</div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2012&ndash;2013 Smart Communications, Inc.
+  </div>
+</div>
+</body>
+</html>

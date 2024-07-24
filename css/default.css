@@ -1,0 +1,215 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Arial, Helvetica, Verdana, sans-serif;
+	background: #74582c;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #cccccc;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #cccccc;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 800px;
+	background: #fff;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.header {
+	background-image:url(../images/header.png);
+	width: 800px;
+	height: 368px;
+}
+.logo {
+	float: left;
+	padding: 22px 0 0 28px;
+	width: 235px;
+}
+.nav {
+	float: right;
+	width: 537px;
+}
+.clear {
+	clear: both;
+}
+.br {
+	display:block;
+	padding-top: 8px;
+}
+.br2 {
+	display:block;
+	padding-top: 48px;
+}
+.horizontal8px {
+	background: #74582c;
+	height: 8px;
+}
+
+.sidebar1 {
+	float: left;
+	padding: 0 0 24PX 28px;
+	width: 235px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+.sidebar1 a, sidebar1 a:visited{
+	color: #74582c;
+}
+.sidebar1 a:hover, sidebar1 a:active, sidebar1 a:focus{
+	color: #cccccc;
+}
+.content {
+	float: right;
+	padding: 8px 25px 30px 25px;
+	width: 487px;
+	font-size: 12px;
+}
+.contentT {
+	font-size: 14px;
+	font-weight: bold;
+}
+.contentHome {
+	float: right;
+	width: 537px;
+}
+.content a, content a:visited{
+	color: #74582c;
+	font-weight: bold;
+}
+.content a:hover, content a:active, content a:focus{
+	color: #cccccc;
+	font-weight: bold;
+}
+.content p{
+	margin-bottom: 0;
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 0 0 15px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+.col3 {
+	background-image:url(../images/col3.png);
+	width: 800px;
+	height: 240px;
+}
+
+.col31 {
+	float: left;
+	padding: 22px 0 0 28px;
+	width: 235px;
+	font-size: 12px;
+	color: #cccccc;
+}
+.col32 {
+	float: left;
+	padding: 26PX 12px 0 23px;
+	width: 233px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #cccccc;
+}
+.col33 {
+	float: right;
+	padding: 26PX 24px 0 12px;
+	width: 233px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #cccccc;
+}
+.submitbox {
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 160px;
+	height: 24px;
+	font-size: 12px;
+	border:2px solid #cccccc;
+}
+#submit_L {
+	float: left;
+	width: 180px;
+}
+
+#submit_R {
+	float: left;
+	margin-top: 10px;
+	width: 55px;
+}
+#results {
+	position: relative;
+	top: 8px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* ~~ The rollover images ~~ */
+.buyButton {
+	display: block;
+	float:right;
+	width: 235px;
+	height: 31px;
+	background: url('../images/button_buy.png');
+	text-indent: -99999px;
+}
+.buyButton:hover {
+	background: url('../images/button_buy_o.png');
+}
+.buyButton:active {
+	background: url('../images/button_buy_c.png');
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #74582c;
+	padding: 8px 0 20px 0;
+	font-size: 9px;
+	color: #fff;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}

@@ -1,0 +1,96 @@
+ul#continents {
+	list-style: none;
+	background: url(../images/nav.png) no-repeat 0 0;
+	position: relative;
+	width: 540px;
+	height: 200px;	
+	margin: 0;
+	padding: 0;
+}
+
+ul#continents li {
+	position: absolute;
+}
+
+ul#continents li a{
+	display: block;
+	height: 100%;
+	text-indent: -9000px;
+}
+
+#what {
+	width: 337px;
+	height: 35px;
+	top: 15px;
+	left: 20px;
+}
+#contents {
+	width: 163px;
+	height: 35px;
+	top: 15px;
+	left: 357px;
+}
+#why {
+	width: 500px;
+	height: 35px;
+	top: 50px;
+	left: 20px;
+}
+#about {
+	width: 168px;
+	height: 35px;
+	top: 85px;
+	left: 20px;
+}
+#read {
+	width: 332px;
+	height: 35px;
+	top: 85px;
+	left: 188px;
+}
+#creative {
+	width: 500px;
+	height: 35px;
+	top: 120px;
+	left: 20px;
+}
+#stevejobs {
+	width: 393px;
+	height: 40px;
+	top: 155px;
+	left: 20px;
+}
+#buy {
+	width: 107px;
+	height: 40px;
+	top: 155px;
+	left: 413px;
+}
+
+ul#continents li a:hover {
+	background: url(../images/nav.png) no-repeat 0 0;	
+}
+ul#continents li#what a:hover {
+	background-position: -20px -215px;
+}
+ul#continents li#contents a:hover {
+	background-position: -357px -215px;
+}
+ul#continents li#why a:hover {
+	background-position: -20px -250px;
+}
+ul#continents li#about a:hover {
+	background-position: -20px -285px;
+}
+ul#continents li#read a:hover {
+	background-position: -188px -285px;
+}
+ul#continents li#creative a:hover {
+	background-position: -20px -320px;
+}
+ul#continents li#stevejobs a:hover {
+	background-position: -20px -355px;
+}
+ul#continents li#buy a:hover {
+	background-position: -413px -355px;
+}

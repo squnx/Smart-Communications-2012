@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Creativity At Work</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/nav_about.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/ajax_jquery.validate_1.7/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#myform").validate({
+			debug: false,
+			rules: {
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('process.php', $("#myform").serialize(), function(data) {
+					$('#results').html(data);
+				});
+			}
+		});
+	});
+	</script>
+	<style>label.error {position:relative; top:10px; width: 237px; color: red;}</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="horizontal8px"></div>
+  <div class="header">
+    <div class="logo">
+	  <a href="index.html"><img src="images/logo.gif" width="235" height="335" alt="logo" /></a>
+	</div>
+    <div class="nav">
+	  <ul id="continents">
+	    <li id="what"><a href="what.html">WHAT OTHERS ARE SAYING</a></li>
+	    <li id="contents"><a href="contents.html">TABLE OF CONTENTS</a></li>    
+	    <li id="why"><a href="why.html">WHY YOU SHOULD READ THIS BOOK</a></li>
+	    <li id="about"><a href="about.html">ABOUT THE AUTHOR</a></li>
+	    <li id="read"><a href="read.html">READ A SAMPLE CHAPTER</a></li>
+	    <li id="creative"><a href="creative.html">TAKING YOUR COMPANY CREATIVE</a></li>
+	    <li id="stevejobs"><a href="steveJobs.html">WHAT WOULD STEVE JOBS DO?</a></li>
+	    <li id="buy"><a href="stevejobs.html">BUY IT NOW</a></li>
+	  </ul>
+	</div>
+  </div>
+  <div class="clear"></div>
+  
+  <div class="sidebar1">
+	<a href="#" class="buyButton" target="_blank">BUY THE BOOK</a><br />
+	<img src="images/title_put.gif" width="235" height="90" alt="PUT CREATIVITY TO WORK FOR YOU" /><br />
+	<a href="trainingProgram.html">Four Alpha Organizational Creativity Training Programs</a>
+	<span class="br"></span>
+	<a href="#">Buy the E-Book</a>
+	<span class="br"></span>
+	<a href="#">Download the White Paper:<br />Creative Accountability</a>
+	<span class="br"></span>
+	<a href="faq.html">Frequently Asked Questions</a><br /><br />
+    <a href="#"><img src="images/button_test.png" width="235" height="83" alt="TAKE THE TEST" /></a>
+  </div>
+  <div class="content">
+    <img src="images/pic_harry.jpg" width="146" height="206" alt="Harry Webber" style="float:right; margin: 0 0 10px 15px;" />
+	<span class="contentT">ABOUT THE AUTHOR</span>
+	<span class="br"></span>
+    <span class="contentT"><a href="http://www.harrywebber.com" target="_blank">Harry Webber</a></span>
+	<span class="br"></span>
+	Since childhood, Harry Webber has been a creative person for hire. At the young age of 12, he created safety posters for the once mighty Pennsylvania Railroad.
+	At 19, he moved to Detroit to become the first art director for the legendary Motown Record Corp., winning 22 gold records.
+    <span class="br"></span>
+	Five years later, Harry returned to New York to join Young & Rubicam, where he was on the team responsible for creating such memorable television campaigns as <em>A Mind is a Terrible Thing to Waste and I'm Stuck on Band-Aid Brand</em>, two of the longest running campaigns in advertising history.
+    <span class="br"></span>
+	For the next 25 years on Madison Avenue, Harry Webber has been credited with creative responsibility for <em>Chow, Chow, Chow; Thanks, I Needed That; Quality is Job 1</em>; and many other mass-marketed television and print efforts for such well-known advertising agencies as Leo Burnett, SSC&B, McCann-Ericsson, and Wells, Rich, Greene.
+	<span class="br"></span>
+	In 1985, Mr. Webber saw the writing on the wall for the practice of mass marketing. Moving West to Los Angeles, he founded Smart Communications, Inc., the first marketing firm to devote itself to the development of segmented marketing in America.
+	<span class="br"></span>
+	Since then, his clients have included McDonald's, Kentucky Fried Chicken, Hardee's, Denny's, The Coca-Cola Company, The Walt Disney Co., Columbia/TriStar, United Paramount Network, Turner Home Entertainment, F/X Networks, The California Lottery, Athearn Trains in Miniature, L'Ermitage Hotels, California Department of Health Services, OrNda Healthcorp, Tenent Healthcare Corp, Sun Microsystems, and DirecTV.
+	<span class="br"></span>
+	His landmark book <a href="http://www.amazon.com/Divide-Conquer-Customers-Through-Segmentation/dp/0471176338" target="_blank"><em>Divide & Conquer</em></a> (John Wiley & Sons, NY) is a best seller on the practice of market segmentation.
+	<span class="br"></span>
+	Harry Webber's work is in the Clio Hall of Fame, The Museum of Advertising, Madison Avenue's Advertising Walk of Fame, and the permanent collections of the Museum of Contemporary Art and the Smithsonian.
+	<span class="br"></span>
+	He has been featured in the books <em>Mirror Makers</em> and <em>Positioning</em> as well as the <em>Wall Street Journal, The Los Angeles Times</em>, CBS, NBC, CNN, <em>AdWeek, Adrants</em>, and <em>Advertising Age</em>.
+	<em>The New York Times</em> credited Harry's <em>CokeClassic. A Cool American</em> campaign with pioneering the trend of user-generated content over the web.
+	<span class="br"></span>
+	Some 10,000 advertising and marketing professionals worldwide read Harry's online column, <a href="http://www.madisonavenew.com" target="_blank">MadisonAveNew.com</a>, each week.
+	<span class="br"></span>
+	In 2006 Mr. Webber, along with partners Angela Glenn (<a href="http://www.thegaspcompany.com" target="_blank">The Gasp Company, LLC</a>), <a href="http://www.imdb.com/name/nm0185621/" target="_blank">Dan Cracchiolo</a> (Producer, <a href="http://www.imdb.com/title/tt0133093/" target="_blank">The Matrix</a>), and <a href="http://www.imdb.com/name/nm0270770/" target="_blank">John Feist</a> (Producer, <a href="http://www.imdb.com/title/tt0239195/" target="_blank">Survivor</a>), began developing branded entertainment content for the <a href="http://www.fantazzzmia.com" target="_blank">Institute for Advanced Practices in Advertising</a>, an ad industry think tank.
+	<span class="br"></span>
+	<em>Creativity at Work</em> is Mr. Webber's third book. His second book, for children, <em>Fantazzzmia: Where Dreams Come From</em> (with educator Monica Erne), was also published by Four Dolphins Press in Los Angeles.
+  </div>
+  <div class="clear"></div>
+  <div class="horizontal8px"></div>
+  
+  <div class="col3">
+    <div class="col31">
+	  <span style="font-size: 14px; font-weight: bold;">FIND US ONLINE</span><br />
+	  <a href="mailto:creativity@creativityatwork.org">creativity@creativityatwork.org</a><br />
+	  <a href="www.fouralpha.com" target="_blank">www.fouralpha.com</a>
+	  <span class="br2"></span>
+	  <span style="font-weight: bold;">Stay informed. Get the newsletter.</span><br />
+	  <div>
+	  <form name="myform" id="myform" action="" method="post">
+	  <div id="submit_L"><input type="text" name="email" id="email" onfocus="this.value=''" value="Email Address" class="submitbox"></div>
+	  <div id="submit_R"><input type="image" name="submit" src="images/button_submit.png" onmouseover="javascript:this.src='images/button_submit_o.png';" onmouseout="javascript:this.src='images/button_submit.png';" width="30" height="30" border="0" onclick="return cap_valid(event);"></div>
+	  <span id="results"><span>
+	  </form>
+	  </div>
+	</div>
+	<div class="col32">
+	  <a href="trainingProgram.html"><img src="images/pic_trainingProgram.jpg" width="233" height="153" alt="TRAINING PROGRAMS" style="padding-bottom: 6px;" /></a><br />
+	  ORGANIZATIONAL CREATIVITY<br />CORPORATE TRAINING PROGRAMS
+	</div>
+	<div class="col33">
+	  <a href="#"><img src="images/pic_whitePaper.jpg" width="233" height="153" alt="WHITE PAPER" style="padding-bottom: 6px;" /></a><br />
+	  DOWNLOAD THE WHITE PAPER ON<br />CREATIVE ACCOUNTABILITY
+	</div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2012&ndash;2013 Smart Communications, Inc.
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Creativity At Work</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/nav_steveJobs.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/ajax_jquery.validate_1.7/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#myform").validate({
+			debug: false,
+			rules: {
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('process.php', $("#myform").serialize(), function(data) {
+					$('#results').html(data);
+				});
+			}
+		});
+	});
+	</script>
+	<style>label.error {position:relative; top:10px; width: 237px; color: red;}</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="horizontal8px"></div>
+  <div class="header">
+    <div class="logo">
+	  <a href="index.html"><img src="images/logo.gif" width="235" height="335" alt="logo" /></a>
+	</div>
+    <div class="nav">
+	  <ul id="continents">
+	    <li id="what"><a href="what.html">WHAT OTHERS ARE SAYING</a></li>
+	    <li id="contents"><a href="contents.html">TABLE OF CONTENTS</a></li>    
+	    <li id="why"><a href="why.html">WHY YOU SHOULD READ THIS BOOK</a></li>
+	    <li id="about"><a href="about.html">ABOUT THE AUTHOR</a></li>
+	    <li id="read"><a href="read.html">READ A SAMPLE CHAPTER</a></li>
+	    <li id="creative"><a href="creative.html">TAKING YOUR COMPANY CREATIVE</a></li>
+	    <li id="stevejobs"><a href="steveJobs.html">WHAT WOULD STEVE JOBS DO?</a></li>
+	    <li id="buy"><a href="stevejobs.html">BUY IT NOW</a></li>
+	  </ul>
+	</div>
+  </div>
+  <div class="clear"></div>
+  
+  <div class="sidebar1">
+	<a href="#" class="buyButton" target="_blank">BUY THE BOOK</a><br />
+	<img src="images/title_put.gif" width="235" height="90" alt="PUT CREATIVITY TO WORK FOR YOU" /><br />
+	<a href="trainingProgram.html">Four Alpha Organizational Creativity Training Programs</a>
+	<span class="br"></span>
+	<a href="#">Buy the E-Book</a>
+	<span class="br"></span>
+	<a href="#">Download the White Paper:<br />Creative Accountability</a>
+	<span class="br"></span>
+	<a href="faq.html">Frequently Asked Questions</a><br /><br />
+    <a href="#"><img src="images/button_test.png" width="235" height="83" alt="TAKE THE TEST" /></a>
+  </div>
+  <div class="content">
+    <span class="contentT">WHAT WOULD STEVE JOBS DO?</span>
+	<span class="br"></span>
+	By now it is no secret that Steve Jobs embraced the principles of organizational creativity to make Apple the world's largest company.
+	As he put it, <em>All of us are more creative than any one of us.</em>
+    <span class="br"></span>
+	Enough has been written about this remarkable visionary to know that This is not good enough; we can do better was his philosophy on applied creativity.
+	Even with the amazing talent he had on staff, he always believed that his people could improve on what they thought was great. And improve they did, time and time again.
+	Steve Jobs believed in the capacity of his people to be excellent, and to translate that excellence to the products at Apple. Right down to the smallest detail.
+    <span class="br"></span>
+	<em>Do it better.</em> That's what Steve would do. How would he make it better? By demanding that someone get more creative.<br /><br />
+	<span class="contentT">What Can You Do?</span>
+	<span class="br"></span>
+	Tough times require tough measures. <em>Creativity At Work</em> shows you how to leverage organizational creativity as a competitive advantage to make the most of your people and take your organization to the next level.
+  </div>
+  <div class="clear"></div>
+  <div class="horizontal8px"></div>
+  
+  <div class="col3">
+    <div class="col31">
+	  <span style="font-size: 14px; font-weight: bold;">FIND US ONLINE</span><br />
+	  <a href="mailto:creativity@creativityatwork.org">creativity@creativityatwork.org</a><br />
+	  <a href="www.fouralpha.com" target="_blank">www.fouralpha.com</a>
+	  <span class="br2"></span>
+	  <span style="font-weight: bold;">Stay informed. Get the newsletter.</span><br />
+	  <div>
+	  <form name="myform" id="myform" action="" method="post">
+	  <div id="submit_L"><input type="text" name="email" id="email" onfocus="this.value=''" value="Email Address" class="submitbox"></div>
+	  <div id="submit_R"><input type="image" name="submit" src="images/button_submit.png" onmouseover="javascript:this.src='images/button_submit_o.png';" onmouseout="javascript:this.src='images/button_submit.png';" width="30" height="30" border="0" onclick="return cap_valid(event);"></div>
+	  <span id="results"><span>
+	  </form>
+	  </div>
+	</div>
+	<div class="col32">
+	  <a href="trainingProgram.html"><img src="images/pic_trainingProgram.jpg" width="233" height="153" alt="TRAINING PROGRAMS" style="padding-bottom: 6px;" /></a><br />
+	  ORGANIZATIONAL CREATIVITY<br />CORPORATE TRAINING PROGRAMS
+	</div>
+	<div class="col33">
+	  <a href="#"><img src="images/pic_whitePaper.jpg" width="233" height="153" alt="WHITE PAPER" style="padding-bottom: 6px;" /></a><br />
+	  DOWNLOAD THE WHITE PAPER ON<br />CREATIVE ACCOUNTABILITY
+	</div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2012&ndash;2013 Smart Communications, Inc.
+  </div>
+</div>
+</body>
+</html>
